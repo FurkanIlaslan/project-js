@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+
+    <!-- ! Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ! Bootstrap İcons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- ! Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- ! Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- ! External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="up-navbar d-flex justify-content-between align-items-center border-bottom border-1 border-success px-5">
+            <div class="phone-location d-flex gap-4">
+                <p class="m-0 fs-7">(+90) 531 302 83 54</p>
+                <p class="m-0 fs-7">Çanakkale / Türkiye</p>
+            </div>
+            <p class="m-0 fs-7 fw-bold text-secondary">Süper Değerli Teklifler - Kuponlarla daha fazla tasarruf edin.</p>
+            <div class="login-signup">
+                <a href="#" class="fs-7 text-decoration-none text-black">Login</a>
+                <span>/</span>
+                <a href="#" class="fs-7 text-decoration-none text-black">Sign Up</a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-transparent mt-3">
+            <div class="container-fluid px-5 gap-4">
+              <a class="navbar-brand" href="#">
+                <img width="100px" class="py-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7z5Zo-4kv09cGB3BnO2j1r69BZvz6UUohDA&s" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 fw-bold">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="shop" class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Compare</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                </ul>
+                <form class="d-flex justify-content-center align-items-center w-40" role="search">
+                  <input class="form-control me-2 py-2 shadow-none" type="search" placeholder="Search for items..." aria-label="Search">
+                  <div class="like d-flex me-3 position-relative">
+                      <i class="bi bi-heart fs-4"></i>
+                      <span class="text-white">0</span>
+                  </div>
+                  <div class="quantity d-flex position-relative">
+                      <i class="bi bi-bag fs-4"></i>
+                      <span class="text-white">0</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- ! Header Altındaki Tanıtım Alanı -->
+    <div class="container-fluid px-5 mt-6">
+        <div class="row">
+            <div class="col-6 d-flex flex-column justify-content-center">
+                <h5 class="active mb-2">Son İndirimler</h5>
+                <h3 class="text-black fs-02 mb-2">Moda Trendleri</h3>
+                <h2 class="fs-01 mb-2 active"> Büyük Koleksiyon</h2>
+                <h6 class="active fw-light">Kuponlarla daha fazla tasarruf edin ve %20'ye kadar indirim kazanın</h6>
+                <button class="btn-green mt-4">Alışverişe Başla</button>
+            </div>
+            <div class="col-6">
+                <img class="w-100" src="img/home-img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ! Popular Categories Bölümü Scroll Yapısı -->
+    <div class="container-fluid px-6 mt-5">
+        <div class="d-flex justify-content-between">
+            <h5 class="mb-4"><span class="active">Populer</span> Kategoriler</h5>
+            <div class="buttons">
+                <button class="btn btn-color left-btn"><i class="bi bi-chevron-left"></i></button>
+                <button class="btn btn-color right-btn"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="popular-categories-wrapper d-flex gap-5 overflow-x-hidden text-center">
+            <!-- <div class="col-2">
+                <div class="border border-1 border-success p-2 rounded-2 bg-secondary">
+                    <img class="w-100 rounded-2" src="img/category-1.jpg" alt="">
+                    <a class="mt-4 text-center text-secondary">Pillowcase</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- ! Featured Popular New Added Bölümü -->
+    <div class="container-fluid px-5 mt-5">
+        <button id="one-cikanlar" class="btn btn-outline-success">Öne Çıkanlar</button>
+        <button id="populer" class="btn btn-outline-success">Popüler</button>
+        <button id="son-eklenenler" class="btn btn-outline-success">Son Eklenenler</button>
+
+        <div class="product-wrapper mt-3">
+            <div class="row product-wrapper-row">
+            <!-- <div class="col-3">
+                <div class="border border-1 border-success p-3 rounded-4 position-relative">
+                    <img class="w-100 rounded-4" src="img/category-1.jpg" alt="">
+                    <p class="fs-7 mt-2 mb-0">Clothing</p>
+                    <p class="mb-0">Colorful Pattern Ship</p>
+                    <div class="star-rating">
+                        <i class="bi bi-star text-warning fs-7"></i>
+                        <i class="bi bi-star text-warning fs-7"></i>
+                        <i class="bi bi-star text-warning fs-7"></i>
+                        <i class="bi bi-star text-warning fs-7"></i>
+                        <i class="bi bi-star text-warning fs-7"></i>
+                    </div>
+                    <p class="price active fw-bold me-3 d-inline-flex my-0">$238.85</p>
+                    <del class="text-secondary"> <small> $245.99</small></del>
+                    <div class="add-to-cart">
+                        <button type="button" class="btn rounded-circle fs-7" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart">
+                            <i class="bi bi-bag-plus"></i>
+                        </button> 
+                    </div>
+                </div>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ! İndirim Alanı -->
+    <div class="container-fluid px-5 mt-5">
+        <div class="row">
+            <div class="col-6 position-relative">
+                <img class="w-100 discount-photo" src="img/deals-1.jpg" alt="">
+                <div class="discount-info">
+                    <h1 class="active">Günün Fırsatı</h1>
+                    <p class="text-secondary">Sınırlı sayıda ürün.</p>
+                    <h3 class="fw-light">Yaz Koleksiyonu <br> Yeni Modern Tasarım</h3>
+                    <p class="text-danger d-inline-flex me-2 fs-5 fw-bold">$139.00</p>
+                    <del class="text-secondary">$169.00</del>
+                    <p>Acele Et! İndirimin Sonuna:</p>
+                    <div class="time-wrapper d-flex gap-2">
+                        <span id="days" class="time d-flex justify-content-center align-items-center">02</span>
+                        <span class="d-flex justify-content-center align-items-center">:</span>
+                        <span id="hours" class="time d-flex justify-content-center align-items-center">22</span>
+                        <span class="d-flex justify-content-center align-items-center">:</span>
+                        <span id="minutes" class="time d-flex justify-content-center align-items-center">57</span>
+                        <span class="d-flex justify-content-center align-items-center">:</span>
+                        <span id="seconds" class="time d-flex justify-content-center align-items-center">24</span>
+                    </div>
+                <button class="btn-green mt-4">Alışverişe Başla</button>
+                </div>
+
+            </div>
+            <div class="col-6 position-relative">
+                <img class="w-100 discount-photo" src="img/deals-2.png" alt="">
+                <div class="discount-info">
+                    <h1 class="active">Kadın Giyim</h1>
+                    <p class="text-secondary">Sınırlı sayıda ürün.</p>
+                    <h3 class="fw-light">Yeni Seyahatin İçin <br> Birşeyler Dene</h3>
+                    <p class="text-danger d-inline-flex me-2 fs-5 fw-bold">$139.00</p>
+                    <del class="text-secondary">$169.00</del>
+                    <p>Acele Et! İndirimin Sonuna:</p>
+                    <div class="time-wrapper d-flex gap-2">
+                        <span id="days" class="time d-flex justify-content-center align-items-center">02</span>
+                        <span class="d-flex justify-content-center align-items-center">:</span>
+                        <span id="hours" class="time d-flex justify-content-center align-items-center">22</span>
+                        <span class="d-flex justify-content-center align-items-center">:</span>
+                        <span id="minutes" class="time d-flex justify-content-center align-items-center">57</span>
+                        <span class="d-flex justify-content-center align-items-center">:</span>
+                        <span id="seconds" class="time d-flex justify-content-center align-items-center">24</span>
+                    </div>
+                <button class="btn-green mt-4">Alışverişe Başla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 mt-5 bg-green">
+        <div class="row d-flex align-items-center">
+            <div class="col-4 d-flex align-items-center">
+                <i class="bi bi-envelope-at fs-1 me-3"></i>
+                <p class="m-0 fs-6">Yeniliklerden haberdar olmak için</p>
+            </div>
+            <div class="col-4">
+                <p class="m-0 fs-6">...ve ilk alışverişe özel $25'a varan indirim kuponu.</p>
+            </div>
+            <div class="col-4">
+                <div class="input-group">
+                    <input type="text" class="form-control shadow-none" placeholder="Email giriniz..." aria-label="Username" aria-describedby="basic-addon1">
+                    <button class="btn btn-dark" id="basic-addon1">Abone Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! Footer Alanı -->
+    <div class="container-fluid px-5 mt-5">
+        <div class="row">
+            <div class="col-4">
+                <img class="d-block" width="100px" src="img/logo.svg" alt="">
+                <p class="text-secondary mt-4">Contact</p>
+                <p class="mb-1"><span class="active fw-bold">Adress:</span>562 Wellington Road, Street 32, San Francisco</p>
+                <p class="mb-1"><span class="active fw-bold">Phone:</span> +01 2222 365 /(+91) 01 2345 6789</p>
+                <p class="mb-1"><span class="active fw-bold">Hours:</span>10:00 - 18:00, Mon - Sat</p>
+                <p class="text-secondary mt-4 my-0">Follow Me</p>
+                <div class="social-media d-flex align-items-center gap-2 text-secondary">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-pinterest"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <h5 class="mb-4">Adress</h5>
+                <p class="mb-1">About Us</p>
+                <p class="mb-1">Delivery Information</p>
+                <p class="mb-1">Privacy Policy</p>
+                <p class="mb-1">Terms & Conditions</p>
+                <p class="mb-1">Contact Us</p>
+                <p class="mb-1">Support Center</p>
+            </div>
+
+            <div class="col-2">
+                <h5 class="mb-4">My Account</h5>
+                <p class="mb-1">Sing In</p>
+                <p class="mb-1">View Cart</p>
+                <p class="mb-1">My Wishlist</p>
+                <p class="mb-1">Track My Order</p>
+                <p class="mb-1">Help</p>
+                <p class="mb-1">Order</p>
+            </div>
+            <div class="col-4">
+                <h5 class="mb-4">Secured Payment Gateways</h5>
+                <img width="240px" src="img/payment-method.png" alt="">
+            </div>
+        </div>
+        <hr class="mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <p class="text-secondary">© 2024 Evara. All rights reserved</p>
+            <p class="text-secondary">Designed by KodKoloni</p>
+        </div>
+    </div>
+
+
+    <!-- ! Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- ! External JS -->
+    <script src="scripts/index.js"></script>
+</body>
+</html>

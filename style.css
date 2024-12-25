@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+/* body{
+    height: 5000px;
+} */
+
+header .up-navbar{
+    height: 60px;
+    background-color: #E8F6EB;
+}
+
+.fs-7{
+    font-size: 14px;
+}
+
+.active{
+    color: #078179 !important;
+}
+
+.w-40{
+    width: 40%;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+.like span,
+.quantity span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #078179;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+}
+
+.mt-6{
+    margin-top: 80px;
+}
+
+.fs-01{
+    font-size: 70px;
+}
+
+.fs-02{
+    font-size: 55px;
+}
+
+.btn-green{
+    width: 40%;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    background-color: #078179;
+    border: 2px solid #078179;
+    font-weight: bold;
+    transition: 0.2s all linear;
+}
+
+.btn-green:hover{
+    color: #078179;
+    background-color: white;
+    border: 2px solid #078179;
+}
+
+.px-6{
+    padding-inline: 5%;
+}
+
+.btn-color{
+    background-color: #078179;
+    color: white;
+}
+
+.btn-color:hover{
+    background-color: #078179;
+    color: white;  
+}
+
+.height{
+    height: 158.1px;
+}
+
+.cursor{
+    cursor: pointer !important;
+}
+
+
+.add-to-cart{
+    width: 40px;
+    height: 40px;
+    background-color: #078179;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.add-to-cart i{
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.tooltip-inner {
+    background-color: #078179;
+    color: white;
+    font-size: 12px;
+}
+
+.yükseklik{
+    height: 250px !important;
+}
+
+/* Add this CSS to style the active button */
+.active-button {
+    background-color: #078179;
+    color: white;
+}
+
+
+/* ! Anasayfa İçerisindeki İndirim Bölümü */
+.time-wrapper .time{
+    width: 50px;
+    height: 50px;
+    background-color: #078179;
+    border-radius: 5px;
+    color: white;
+}
+
+.discount-info{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.discount-photo{
+    height: 480px !important;
+}
+
+
+/* ! Shop Sayfası */
+.sidebar-item{
+    cursor: pointer;
+}
+
+.sidebar-item:hover{
+    color: #078179;
+}
+
+
+/* ! Footer */
+.bg-green{
+    background-color: #ADCCC5;
+}
+
+.sidebar-bg-color{
+    background-color: #E8F6EB;
+}
+
+/* ! Ürün detay sayfasındaki yıldızlar için */
+.yildizlar i {
+    color: gray; /* Boş yıldız rengi */
+}
+
+.yildizlar i.bi-star-fill {
+    color: gold; /* Dolu yıldız rengi */
+}

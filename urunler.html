@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urunler</title>
+
+    <!-- ! Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ! Bootstrap İcons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- ! Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ! Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- ! External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="up-navbar d-flex justify-content-between align-items-center border-bottom border-1 border-success px-5"
+      >
+        <div class="phone-location d-flex gap-4">
+          <p class="m-0 fs-7">(+90) 531 302 83 54</p>
+          <p class="m-0 fs-7">Çanakkale / Türkiye</p>
+        </div>
+        <p class="m-0 fs-7 fw-bold text-secondary">
+          Süper Değerli Teklifler - Kuponlarla daha fazla tasarruf edin.
+        </p>
+        <div class="login-signup">
+          <a href="#" class="fs-7 text-decoration-none text-black">Login</a>
+          <span>/</span>
+          <a href="#" class="fs-7 text-decoration-none text-black">Sign Up</a>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg bg-transparent mt-3">
+        <div class="container-fluid px-5 gap-4">
+          <a class="navbar-brand" href="#">
+            <img
+              width="100px"
+              class="py-2"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7z5Zo-4kv09cGB3BnO2j1r69BZvz6UUohDA&s"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 fw-bold">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a id="shop" class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Compare</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+            <form
+              class="d-flex justify-content-center align-items-center w-40"
+              role="search"
+            >
+              <input
+                id="searchInput"
+                class="form-control me-2 py-2 shadow-none"
+                type="search"
+                placeholder="Search for items..."
+                aria-label="Search"
+              />
+              <div class="like d-flex me-3 position-relative">
+                <i class="bi bi-heart fs-4"></i>
+                <span class="text-white">0</span>
+              </div>
+              <div class="quantity d-flex position-relative">
+                <button type="button" class="btn btn-transparent p-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <i class="bi bi-bag fs-4"></i>
+                  <span class="adet text-white">0</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ! Ürünlerin Listeleneceği Alan -->
+    <div class="container-fluid px-5 mt-5">
+      <div class="product-wrapper mt-3">
+        <div class="row">
+          <div class="col-2 sidebar-bg-color p-3 rounded-2">
+            <div class="sidebar">
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">beauty</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">fragrances</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">furniture</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">groceries</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">home-decoration</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">kitchen-accessories</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">laptops</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">mens-shirts</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">mens-shoes</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">mens-watches</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">mobile-accessories</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">motorcycle</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">skin-care</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">smartphones</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">sports-accessories</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">sunglasses</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">tops</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">vehicle</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">womens-bag</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">womens-dresses</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">womens-jewellery</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">womens-shoes</p>
+              <p class="text-capitalize sidebar-item border border-1 border-secondary rounded-3 px-2">womens-watches</p>
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="row product-wrapper-row">
+              <!-- <div class="col-3">
+                <div class="border border-1 border-success p-3 rounded-4 position-relative">
+                    <img class="w-100 rounded-4" src="img/category-1.jpg" alt="">
+                    <p class="fs-7 mt-2 mb-0">Clothing</p>
+                    <p class="mb-0">Colorful Pattern Ship</p>
+                    <div class="star-rating">
+                        <i class="bi bi-star text-warning fs-7"></i>
+                        <i class="bi bi-star text-warning fs-7"></i>
+                        <i class="bi bi-star text-warning fs-7"></i>
+                        <i class="bi bi-star text-warning fs-7"></i>
+                        <i class="bi bi-star text-warning fs-7"></i>
+                    </div>
+                    <p class="price active fw-bold me-3 d-inline-flex my-0">$238.85</p>
+                    <del class="text-secondary"> <small> $245.99</small></del>
+                    <div class="add-to-cart">
+                        <button type="button" class="btn rounded-circle fs-7" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart">
+                            <i class="bi bi-bag-plus"></i>
+                        </button> 
+                    </div>
+                </div>
+            </div> -->
+            </div>
+            <div class="yonlendirme-butonları d-flex justify-content-center align-items-center gap-3">
+              <button class="btn btn-secondary" id="prevButton">Önceki Sayfa</button>
+              <button class="btn btn-secondary" id="nextButton">Sonraki Sayfa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! MODAL YAPISI -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Sepetim</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="sepet-info">
+              <div class="row">
+                <div class="col-2 text-center active fw-bold mb-2">Ürün Resmi</div>
+                <div class="col-3 text-center active fw-bold mb-2">Ürün İsmi</div>
+                <div class="col-2 text-center active fw-bold mb-2">Adet Butonları</div>
+                <div class="col-2 text-center active fw-bold mb-2">Adet Fiyatı</div>
+                <div class="col-2 text-center active fw-bold mb-2">Toplam Fiyat</div>
+              </div>
+            </div>
+            <ul class="p-0 sepet-listesi">
+              <li class="list-unstyled mb-2">
+                <!-- <div class="row">
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <img class="w-100" src="img/product-4-1.jpg" alt="">
+                  </div>
+                  <div class="col-3 d-flex align-items-center justify-content-center">
+                    <p class="mb-0">Başlık</p>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="butonlar">
+                      <button id="azalt" class="btn btn-danger">-</button>
+                      <span class="adet">1</span>
+                      <button id="arttir" class="btn btn-success">+</button>
+                  </div>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="fiyat">499.99₺</div>
+                  </div>
+                  <div class="col-2 d-flex align-items-center justify-content-center">
+                    <div class="toplamFiyat">499.99₺</div>
+                  </div>
+                  <div class="col-1 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-x-circle fs-3 cursor"></i>
+                  </div>
+                </div> -->
+              </li>
+            </ul>
+            <hr class="my-2">
+            <!-- Sonuç Alanı -->
+            <div class="row">
+              <div class="col-9"></div>
+              <div class="col-3 text-start">
+                <p>Sepet Toplamı: <span class="sepet-toplami">0</span></p>
+                <p>Kargo Ücreti: <span>300</span></p>
+                <p>Ödenecek Tutar: <span class="odenecek-tutar">0</span></p>
+                <button class="btn btn-warning">Ödeme Adımına Git</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ! Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- ! External JS -->
+    <script src="scripts/urunler.js"></script>
+  </body>
+</html>

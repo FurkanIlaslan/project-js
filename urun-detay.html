@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detay</title>
+
+      <!-- ! Font Awesome CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- ! Bootstrap İcons CDN -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+      <!-- ! Google Fonts CDN -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+      <!-- ! Bootstrap CSS CDN -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+      <!-- ! External CSS -->
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="up-navbar d-flex justify-content-between align-items-center border-bottom border-1 border-success px-5">
+            <div class="phone-location d-flex gap-4">
+                <p class="m-0 fs-7">(+90) 531 302 83 54</p>
+                <p class="m-0 fs-7">Çanakkale / Türkiye</p>
+            </div>
+            <p class="m-0 fs-7 fw-bold text-secondary">Süper Değerli Teklifler - Kuponlarla daha fazla tasarruf edin.</p>
+            <div class="login-signup">
+                <a href="#" class="fs-7 text-decoration-none text-black">Login</a>
+                <span>/</span>
+                <a href="#" class="fs-7 text-decoration-none text-black">Sign Up</a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-transparent mt-3">
+            <div class="container-fluid px-5 gap-4">
+              <a class="navbar-brand" href="#">
+                <img width="100px" class="py-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7z5Zo-4kv09cGB3BnO2j1r69BZvz6UUohDA&s" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 fw-bold">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="shop" class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Compare</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                </ul>
+                <form class="d-flex justify-content-center align-items-center w-40" role="search">
+                  <input class="form-control me-2 py-2 shadow-none" type="search" placeholder="Search for items..." aria-label="Search">
+                  <div class="like d-flex me-3 position-relative">
+                      <i class="bi bi-heart fs-4"></i>
+                      <span class="text-white">0</span>
+                  </div>
+                  <div class="quantity d-flex position-relative">
+                      <i class="bi bi-bag fs-4"></i>
+                      <span class="text-white">0</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- ! Ürün-detay bilgilerinin gösterileceği alan -->
+    <div class="urun-detay-wrapper mt-5 container">
+        <div class="row urun-detay-row">
+            <!-- <div class="col-5">
+                <img class="w-100" src="img/product-11-2.jpg" alt="">
+            </div>
+            <div class="col-7">
+                <h2 class="active fw-bold">Ürün Adı</h2>
+                <img width="50px" src="https://assets.dummyjson.com/public/qr-code.png" alt="">
+                <span>9164035109868</span>
+                <p class="active">Category</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolor inventore molestias voluptates vero dolorum provident rerum architecto dicta corrupti similique iste sint, itaque minima totam impedit temporibus illo eaque?</p>
+                <p>$20.00</p>
+                <p>Rating : 4.94</p>
+                <p>Stok Durumu : 20 adet / Düşük Stok</p>
+            </div> -->
+        </div>
+
+        <!-- Yorum Alanı -->
+        <div class="yorumlar-tamami">
+        <!-- <div class="yorum-kapsayici mt-5 border border-1 rounded-2 p-3 bg-green">
+            <div class="kullanici-info">
+                <img width="50px" height="50x" class="rounded-circle" src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c21pbGluZyUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <p class="m-0 mt-2 active fw-bold d-inline-flex">Furkan İlaslan</p>
+                <p class="float-end">29.10.2024</p>
+                <div class="yildizlar mt-2">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+                <hr class="w-100 m-0 mt-2">
+            </div>
+            <div class="yorum mt-3">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nostrum est illo quae architecto, harum doloribus officia, tempora, consequatur quam ipsum. Expedita adipisci repellendus amet, quaerat placeat voluptatibus necessitatibus inventore!</p>
+            </div>
+        </div>
+        <div class="yorum-kapsayici mt-2 border border-1 rounded-2 p-3 bg-green">
+            <div class="kullanici-info">
+                <img width="50px" height="50x" class="rounded-circle" src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c21pbGluZyUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <p class="m-0 mt-2 active fw-bold">Furkan İlaslan</p>
+                <hr class="w-100 m-0">
+            </div>
+            <div class="yorum mt-3">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nostrum est illo quae architecto, harum doloribus officia, tempora, consequatur quam ipsum. Expedita adipisci repellendus amet, quaerat placeat voluptatibus necessitatibus inventore!</p>
+            </div>
+        </div>
+        <div class="yorum-kapsayici mt-2 border border-1 rounded-2 p-3 bg-green">
+            <div class="kullanici-info">
+                <img width="50px" height="50x" class="rounded-circle" src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c21pbGluZyUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <p class="m-0 mt-2 active fw-bold">Furkan İlaslan</p>
+                <hr class="w-100 m-0">
+            </div>
+            <div class="yorum mt-3">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nostrum est illo quae architecto, harum doloribus officia, tempora, consequatur quam ipsum. Expedita adipisci repellendus amet, quaerat placeat voluptatibus necessitatibus inventore!</p>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+    <!-- ! Footer Alanı -->
+    <div class="container-fluid px-5 mt-5">
+        <div class="row">
+            <div class="col-4">
+                <img class="d-block" width="100px" src="img/logo.svg" alt="">
+                <p class="text-secondary mt-4">Contact</p>
+                <p class="mb-1"><span class="active fw-bold">Adress:</span>562 Wellington Road, Street 32, San Francisco</p>
+                <p class="mb-1"><span class="active fw-bold">Phone:</span> +01 2222 365 /(+91) 01 2345 6789</p>
+                <p class="mb-1"><span class="active fw-bold">Hours:</span>10:00 - 18:00, Mon - Sat</p>
+                <p class="text-secondary mt-4 my-0">Follow Me</p>
+                <div class="social-media d-flex align-items-center gap-2 text-secondary">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-pinterest"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <h5 class="mb-4">Adress</h5>
+                <p class="mb-1">About Us</p>
+                <p class="mb-1">Delivery Information</p>
+                <p class="mb-1">Privacy Policy</p>
+                <p class="mb-1">Terms & Conditions</p>
+                <p class="mb-1">Contact Us</p>
+                <p class="mb-1">Support Center</p>
+            </div>
+
+            <div class="col-2">
+                <h5 class="mb-4">My Account</h5>
+                <p class="mb-1">Sing In</p>
+                <p class="mb-1">View Cart</p>
+                <p class="mb-1">My Wishlist</p>
+                <p class="mb-1">Track My Order</p>
+                <p class="mb-1">Help</p>
+                <p class="mb-1">Order</p>
+            </div>
+            <div class="col-4">
+                <h5 class="mb-4">Secured Payment Gateways</h5>
+                <img width="240px" src="img/payment-method.png" alt="">
+            </div>
+        </div>
+        <hr class="mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <p class="text-secondary">© 2024 Evara. All rights reserved</p>
+            <p class="text-secondary">Designed by KodKoloni</p>
+        </div>
+    </div>
+
+    <script src="scripts/urun-detay.js"></script>
+</body>
+</html>
